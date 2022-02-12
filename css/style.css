@@ -27,7 +27,7 @@ body {
 }
 
 .cartas-contenedor {
-    width: 95%;
+    width: 85%;
     max-width: 100%;
     /* 400px */
     margin: auto;
@@ -35,6 +35,12 @@ body {
     border-radius: 8px;
     background-color: #03413d;
     /* #00000021 */
+}
+
+@media (max-width: 775px) {
+    .cartas-contenedor {
+        width: 95%;
+    }
 }
 
 /* .swiper-container {
@@ -100,7 +106,7 @@ body {
     border-radius: 20px;
     border: 1px solid #1F1F1F;
     /* #ab1a94 */
-    box-shadow: 1px 1px 8px #1F1F1F;
+    box-shadow: 1px 1px 10px #1F1F1F;
     /* #a62da4f0 */
     background-color: #1F1F1F;
     /* #bb13b9 */
@@ -177,7 +183,6 @@ h2, h3, p, .carta__ilustracion, .carta__nombre-personaje, .carta__icono-clash {
     text-align: center;
     letter-spacing: 1.4px;
     font-size: 1.4em;
-    /* 1.6em */
     font-weight: 400;
     text-shadow: rgba(0, 0, 0, 0.582) 2px 3px;
 }
@@ -194,8 +199,11 @@ h2, h3, p, .carta__ilustracion, .carta__nombre-personaje, .carta__icono-clash {
     font-family: "Verdana";
     /* "Verdana" */
     color: white;
-    background: radial-gradient(circle, #202126 0%, #243453 47%, rgba(21, 26, 31, 0.959) 100%);
-    transition: 0.3s ease-in-out;
+    background: url(../assets/img/banner/processor.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background: radial-gradient(circle, #202126 0%, #243453 47%, rgba(21, 26, 31, 0.959) 100%); */
+    transition: 0.4s ease-in-out;
 }
 
 .carta .carta__cara_trasera .carta__nombre-personaje {
@@ -229,7 +237,7 @@ h2, h3, p, .carta__ilustracion, .carta__nombre-personaje, .carta__icono-clash {
     /* filter: hue-rotate(3.142rad); */
     transition: 0.1s;
     transition-duration: 0.1s;
-    transition-delay: 0.1px;
+    transition-delay: 0; /* 0.1px */
 }
 
 
@@ -372,7 +380,10 @@ h2, h3, p, .carta__ilustracion, .carta__nombre-personaje, .carta__icono-clash {
     transform: translate(-50%, -50%);
     padding: 3em 1em;
     border-radius: 4px;
-    background: radial-gradient(circle, #202126 0%, #243453 47%, rgba(21, 26, 31, 0.959) 100%);
+    background: url(../assets/img/banner/processor.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background: radial-gradient(circle, #202126 0%, #243453 47%, rgba(21, 26, 31, 0.959) 100%); */
 }
 
 .carta.vuelta .carta__cara_delantera {
@@ -486,12 +497,12 @@ h3 {
 
 @font-face {
     font-family: dinot;
-    src: url(https://ali-bhtty.web.app/assets/fonts/dinot.ttf);
+    src: url(../assets/fonts/dinot.ttf);
 }
 
 @font-face {
     font-family: patino;
-    src: url(https://ali-bhtty.web.app/assets/fonts/patino.ttf);
+    src: url(../assets/fonts/patino.ttf);
 }
 
 .download {
@@ -554,7 +565,7 @@ h3 {
 
 .colection-bg {
     /* background-image: url(/assets/img/cards/card-bg1.gif); */
-    background-image: url(../assets/img/banner/rightnow.jpg);
+    background: #243949; background: -moz-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: -webkit-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: linear-gradient(to bottom,  #243949 0%,#517fa4 100%);
 }
 
 :hover {
@@ -564,8 +575,6 @@ h3 {
 :link {
     cursor: pointer;
 }
-
-
 
 /* FOOTER */
 .socialLinks {
