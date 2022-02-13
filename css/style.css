@@ -1,5 +1,5 @@
 :root {
-    --bg-cuadro: rgb(52, 74, 70); /* #243949; background: -moz-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: -webkit-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: linear-gradient(to bottom,  #243949 0%,#517fa4 100%) */
+    --bg-cuadro: rgb(46, 66, 62); /* #243949; background: -moz-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: -webkit-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: linear-gradient(to bottom,  #243949 0%,#517fa4 100%) */
     /* --bg-cuadro: url(../assets/img/banner/green.jpg);  */
     --bg-marco: rgb(47, 236, 199);
     --titulo: whitesmoke;
