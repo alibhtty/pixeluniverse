@@ -1,11 +1,48 @@
+:root {
+    --bg-cuadro: rgb(52, 74, 70); /* #243949; background: -moz-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: -webkit-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: linear-gradient(to bottom,  #243949 0%,#517fa4 100%) */
+    /* --bg-cuadro: url(../assets/img/banner/green.jpg);  */
+    --bg-marco: rgb(47, 236, 199);
+    --titulo: whitesmoke;
+    --subtitulo: whitesmoke;
+    --personaje: #BAFF8F; /* f8e5a6 */
+  }
+
+
+@font-face {
+    font-family: dinot;
+    src: url(../assets/fonts/dinot.ttf);
+}
+
+@font-face {
+    font-family: patino;
+    src: url(../assets/fonts/patino.ttf);
+}
+
+@font-face {
+    font-family: bitcrusher;
+    src: url(../assets/fonts/bitcrusher.ttf);
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
+h1 {
+    font-family: "Lilita One";
+    font-size: 18px;
+    text-transform: uppercase;
+}
+p {
+    font-family: "Gugi";
+    width: 100%;
+    font-size: 16px;
+}
+
 body {
     font-family: "Lilita One", cursive;
-    font-size: 16px;
+    /* font-size: 18px; */
     background-color: #000000;
     /* #1b2130 */
 }
@@ -103,7 +140,8 @@ body {
     z-index: 9999;
     font-size: 10px;
     color: whitesmoke;
-    border-radius: 20px;
+    border-radius: 8px 0 8px 0;
+    /* border-radius: 20px; */
     border: 1px solid #1F1F1F;
     /* #ab1a94 */
     box-shadow: 1px 1px 10px #1F1F1F;
@@ -194,9 +232,9 @@ h2, h3, p, .carta__ilustracion, .carta__nombre-personaje, .carta__icono-clash {
     justify-content: center;
     transform: rotateY(180deg);
     padding: 0.2em;
-    font-size: 0.75em;
+    font-size: 0.8em;
     text-align: center;
-    font-family: "Verdana";
+    font-family: "Gugi"; /* Verdana */
     /* "Verdana" */
     color: white;
     background: url(../assets/img/banner/processor.jpg);
@@ -207,14 +245,15 @@ h2, h3, p, .carta__ilustracion, .carta__nombre-personaje, .carta__icono-clash {
 }
 
 .carta .carta__cara_trasera .carta__nombre-personaje {
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: 700;
     margin: 0;
     margin-top: -30px;
-    color: #f8e5a6;
+    color: var(--personaje);
 }
 
 .carta .carta__cara_trasera .carta__descripcion {
+    width: 100%;
     margin-top: 0.2em;
     font-size: 0.75em;
 }
@@ -473,8 +512,10 @@ h2, h3, p, .carta__ilustracion, .carta__nombre-personaje, .carta__icono-clash {
 
 h2 {
     color: whitesmoke;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
+    /* font-family: patino; */
+    text-transform: uppercase;
 }
 
 h3 {
@@ -492,17 +533,6 @@ h3 {
 
     mix-blend-mode: screen;
     background-size: 300% 400%;
-}
-
-
-@font-face {
-    font-family: dinot;
-    src: url(../assets/fonts/dinot.ttf);
-}
-
-@font-face {
-    font-family: patino;
-    src: url(../assets/fonts/patino.ttf);
 }
 
 .download {
@@ -565,7 +595,7 @@ h3 {
 
 .colection-bg {
     /* background-image: url(/assets/img/cards/card-bg1.gif); */
-    background: #243949; background: -moz-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: -webkit-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: linear-gradient(to bottom,  #243949 0%,#517fa4 100%);
+    background: var(--bg-cuadro);
 }
 
 :hover {
