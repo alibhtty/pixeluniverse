@@ -1,4 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-  <title>cube-v3</title>
-  <path d="M14.928,11.433l0-.007,0,0V4L8,0,1.572,3.711l-.005,0,0,.007L1.072,4v.567l-.005.007.005,0V12L8,16l6.428-3.711,0,0,0-.007L14.928,12ZM9,8l4.929-2.846v5.692ZM7.5,14.557,2.571,11.711,7.5,8.866ZM8,1.155l5.429,3.134L8,7.423,2.572,4.289ZM7,8,2.072,10.846V5.154Zm1.5,6.557V8.866l4.928,2.845Z" fill="#01ecff" />
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="180.000000pt" height="180.000000pt" viewBox="0 0 180.000000 180.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.14, written by Peter Selinger 2001-2017
+</metadata>
+<g transform="translate(0.000000,180.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M190 1778 c-71 -27 -142 -99 -169 -173 -20 -53 -21 -72 -20 -707 0
+-630 1 -655 20 -706 25 -63 87 -130 155 -163 l49 -24 675 0 c670 0 675 0 721
+21 60 28 125 93 153 153 21 46 21 51 21 721 l0 675 -22 48 c-28 60 -84 116
+-148 147 l-50 25 -665 2 c-654 2 -666 2 -720 -19z"/>
+</g>
 </svg>
