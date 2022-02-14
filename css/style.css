@@ -116,7 +116,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 8px;
+    border-radius: 9px;
     border: 5px solid #1f1f1f;
 }
 
@@ -145,7 +145,7 @@ body {
     /* border-radius: 20px; */
     border: 1px solid #1F1F1F;
     /* #ab1a94 */
-    box-shadow: 1px 1px 10px #1F1F1F;
+    box-shadow: 1px 1px 40px #1F1F1F;
     /* #a62da4f0 */
     background-color: #1F1F1F;
     /* #bb13b9 */
@@ -769,3 +769,16 @@ a {
     text-indent: -9999px;
     margin: 0 5px
 }
+
+body, img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: not-allowed;
+    } /* .noselect  -- aplicar clase */
+
+/* ---------------- @alibhtty ----------------- */
