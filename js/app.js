@@ -82,7 +82,7 @@ const App = {
       const len = this.list.length;
       return this.list.map((_, key) => {
         const deg = 360 / len * key - 90;
-        const radius = '1.8rem';
+        const radius = '1.7rem';
         return `rotate(${deg}deg) translate(${radius}) rotate(${-deg}deg)`;
       });
     } },
