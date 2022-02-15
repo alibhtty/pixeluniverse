@@ -4,7 +4,8 @@
 
 :root {
     --circulo: #00DDFF;  /* 66ff00 */
-}
+    --negro: #000;
+  }
 
 * {
   box-sizing: border-box;
@@ -105,7 +106,7 @@ body {
   height: 4rem;
   margin: auto;
   border-radius: 50%;
-  border-top: 5px solid var(--circulo);
+  border-top: 15px solid var(--circulo);
   -webkit-animation: rotate 5s 0.2s both linear infinite;
           animation: rotate 5s 0.2s both linear infinite;
 }
@@ -121,8 +122,9 @@ body {
   transform: translate(-50%, -50%) scale(1.2);
 }
 .round .item.active .inner:after {
-  width: 20%;
-  height: 20%;
+  background-color: #5ccb5f;
+  width: 15%;
+  height: 15%;
   opacity: 1;
 }
 .round .inner {
@@ -145,8 +147,8 @@ body {
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  background-color: var(--circulo);
-  opacity: 0.25;
+  background-color: var(--negro);
+  opacity: 0.55;
   transition: all 0.2s;
 }
 .round img {
