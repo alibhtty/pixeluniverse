@@ -1,6 +1,6 @@
 :root {
     /* --bg-cuadro: rgb(46, 66, 62); */ /* #243949; background: -moz-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: -webkit-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: linear-gradient(to bottom,  #243949 0%,#517fa4 100%) */
-    --bg-cuadro: #111;
+    --bg-cuadro: #0D1012;
     /* --bg-cuadro: url(../assets/img/banner/green.jpg);  */
     --bg-marco: rgb(47, 236, 199);
     --titulo: whitesmoke;
@@ -202,17 +202,6 @@ body {
     top: 0px;
     /* no estaba - parar movimiento */
     transition: 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-/* NO SELECCIONABLE */
-h2, h3, p, .carta__ilustracion, .carta__nombre-personaje, .carta__icono-clash {
-    user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    pointer-events: none;
 }
 
 .carta .carta__cara_delantera .carta__contenido-delantero .carta__nivel {
@@ -604,7 +593,7 @@ h3 {
 }
 
 :hover {
-    cursor: url(../assets/icons/cursor.png), url(puntero.cur), pointer
+    cursor: url(../assets/icons/cursor.png), url(../assets/icons/cursor.cur), pointer;
 }
 
 :link {
@@ -632,7 +621,7 @@ h3 {
 a {
     font-family: dinot;
     text-decoration: none;
-    font-size: 7px;
+    font-size: 6px;
 }
 
 .socialLinks {
@@ -784,5 +773,16 @@ body, img {
     user-select: none;
     cursor: not-allowed;
     } /* .noselect  -- aplicar clase */
+
+/* NO SELECCIONABLE */
+h2, h3, p, .carta__ilustracion, .carta__nombre-personaje, .carta__icono-clash {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+}
 
 /* ---------------- @alibhtty ----------------- */
