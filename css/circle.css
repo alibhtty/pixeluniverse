@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ovo&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap');
 
 :root {
     --circulo: #00DDFF;  /* 66ff00 */
@@ -43,7 +44,8 @@ body {
 @media (max-width: 992px) {
   #app {
     grid-template-columns: 100%;
-    row-gap: 1rem;
+    row-gap: 2em;
+    min-height: 100vh;
   }
 }
 
@@ -76,7 +78,9 @@ body {
 }
 @media (max-width: 992px) {
   .hero-title {
-    top: 2rem;
+    font-size: 150px;
+    max-width: fit-content;
+    top: 1.5rem;
     bottom: auto;
   }
 }
@@ -124,8 +128,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 0.9rem;
+  height: 0.9rem;
   border-radius: 50%;
   box-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.7);
   cursor: pointer;
@@ -151,7 +155,7 @@ body {
 }
 
 .hero-info {
-  width: 4rem;
+  width: 6rem;
   padding: 0.2rem;
   flex-shrink: 0;
   border-radius: 0.2rem;
@@ -188,7 +192,7 @@ body {
           animation-delay: 0.75s;
 }
 .hero-info .title {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: bold;
   text-transform: uppercase;
   color: #09c3e2;
@@ -197,11 +201,15 @@ body {
   content: "   ";
 }
 .hero-info .content {
+  font-family: dosis;
+  font-size: 16px;
+  font-weight: 200;
   color: #ccc;
   text-transform: capitalize;
 }
 .hero-info .content.desc {
-  font-size: 0.8em;
+  font-size: 16px;
+  font-weight: 200;
   line-height: 1.2;
 }
 
@@ -218,6 +226,12 @@ body {
 @media (max-width: 992px) {
   .fullscreen-icon {
     display: none;
+  }
+  .hero-info .content {
+    font-size: 36px;
+  }
+  .hero-info .content.desc {
+    font-size: 36px;
   }
 }
 .fullscreen-icon span {
