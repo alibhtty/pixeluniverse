@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Heroes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="../css/circle.css">
+  <!-- FAVICON --> 
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="../favicon/site.webmanifest">
+  <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-config" content="../favicon/browserconfig.xml">
+</head>
+
+<body translate="no" style="background-color: #000;" oncontextmenu="return false" onkeydown="return false">
+  <div id="app">
+  <div class="hero-bg" 
+       :style="{ backgroundImage: `url(${activeInfo.img})` }" 
+       :key="activeIndex"></div>
+  <div class="hero-title"  :key="activeIndex">{{ activeInfo.name }}</div>
+  
+  <div class="round">
+    <div class="item" 
+         :class="{ active: activeIndex === key }"
+         @click="activeIndex = key"
+         v-for="(el, key) in list"
+         :key="key"
+         :style="{ transform: itemPosition[key] }"
+         >
+      <div class="inner">
+        <img :src="el.thumbImg" alt="">
+      </div>
+    </div>
+  </div>
+  
+  <div class="hero-info" v-if="activeInfo" :key="activeIndex">
+    <div class="row">
+      <div class="title">nombre:</div>
+      <div class="content">{{ activeInfo.name }}</div>
+    </div>
+    <div class="row">
+      <div class="title">rol:</div>
+      <div class="content">{{ activeInfo.role }}</div>
+    </div>
+    <div class="row">
+      <div class="title">dificultad:</div>
+      <div class="content">{{ activeInfo.difficulty }}</div>
+    </div>
+    <div class="row">
+      <div class="title">descripción:</div>
+      <div class="content desc">{{ activeInfo.desc }}</div>
+    </div>
+  </div>
+  
+  <div class="fullscreen-icon" @click="toggleFullScreen">
+    <span v-for="item in 4" :key="key"></span>
+  </div>
+</div>
+
+<!--  <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script> -->
+<script src='https://unpkg.com/vue@3.2.22/dist/vue.global.js'></script>
+<script src="../js/app.js"></script>
+
+</body>
+</html>
