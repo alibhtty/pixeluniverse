@@ -450,15 +450,15 @@ body {
 
 @keyframes resplandor_carta_epica {
     0% {
-        box-shadow: 1px 1px 6px 6px rgba(166, 45, 164, 0.918);
+        box-shadow: 1px 1px 6px 6px rgba(44, 148, 97, 0.918);  /* rgba(166, 45, 164, 0.918) */
     }
 
     50% {
-        box-shadow: 1px 1px 6px 6px rgba(216, 101, 214, 0.918);
+        box-shadow: 1px 1px 6px 6px rgba(37, 176, 114, 0.918);  /* rgba(216, 101, 214, 0.918) */
     }
 
     100% {
-        box-shadow: 1px 1px 6px 6px rgba(166, 45, 164, 0.918);
+        box-shadow: 1px 1px 6px 6px rgba(44, 148, 97, 0.918);  /* rgba(166, 45, 164, 0.918) */
     }
 }
 
