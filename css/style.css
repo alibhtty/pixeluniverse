@@ -1,6 +1,6 @@
 :root {
     /* --bg-cuadro: rgb(46, 66, 62); */ /* #243949; background: -moz-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: -webkit-linear-gradient(to bottom,  #243949 0%,#517fa4 100%); background: linear-gradient(to bottom,  #243949 0%,#517fa4 100%) */
-    --bg-cuadro: #0D1012;
+    --bg-cuadro: #101316;
     /* --bg-cuadro: url(../assets/img/banner/green.jpg);  */
     --bg-marco: rgb(47, 236, 199);
     --titulo: whitesmoke;
@@ -454,7 +454,7 @@ body {
     }
 
     50% {
-        box-shadow: 1px 1px 6px 6px rgba(37, 176, 114, 0.918);  /* rgba(216, 101, 214, 0.918) */
+        box-shadow: 1px 1px 6px 6px rgba(36, 182, 116, 0.918);  /* rgba(216, 101, 214, 0.918) */
     }
 
     100% {
